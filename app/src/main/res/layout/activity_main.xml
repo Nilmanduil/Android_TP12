@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="fr.codevallee.formation.android_tp12.MainActivity"
+    android:weightSum="100">
+
+    <LinearLayout
+        android:id="@+id/action_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/add_user_main"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/add_user"
+            android:drawableLeft="@android:drawable/ic_input_add"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/user_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_weight="80"/>
+
+</LinearLayout>

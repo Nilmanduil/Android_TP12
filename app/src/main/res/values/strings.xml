@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Android_TP12</string>
+    <string name="users_label">Utilisateurs</string>
+    <string name="lastname_label">Nom</string>
+    <string name="firstname_label">Prénom</string>
+    <string name="age_label">Âge</string>
+    <string name="work_label">Métier</string>
+    <string name="add_user">Ajouter utilisateur</string>
+</resources>
