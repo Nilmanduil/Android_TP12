@@ -6,4 +6,8 @@
     <string name="age_label">Âge</string>
     <string name="work_label">Métier</string>
     <string name="add_user">Ajouter utilisateur</string>
+    <string name="delete_user">Supprimer utilisateur</string>
+    <string name="confirm_delete_user">Voulez-vous vraiment supprimer </string>
+    <string name="ok">OK</string>
+    <string name="back">Retour</string>
 </resources>

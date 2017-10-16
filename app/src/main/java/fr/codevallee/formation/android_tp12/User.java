@@ -25,6 +25,10 @@ public class User implements Serializable {
         this(id, firstname, lastname, null, "");
     }
 
+    public User(Integer id) {
+        this(id, "", "", null, "");
+    }
+
     public User(String firstname, String lastname) {
         this(null, firstname, lastname);
     }
