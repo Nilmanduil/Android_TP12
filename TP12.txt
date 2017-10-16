@@ -1,0 +1,19 @@
+# Le but de ce TP 12 est de créer une ihm permettant d'ajouter des utilisateurs qui seront stockés dans une base de données.
+# 2 heures
+
+# Le Layout de son choix.
+
+- L'application doit contenir trois activités :
+- Une activité qui liste les utilisateurs
+- Une activité qui permet d'ajouter ou supprimer un utilisateur
+
+1 - L'utilisateur doit contenir les champs suivants :
+
+	- Nom
+	- Prénom
+	- âge
+	- Métier
+
+
+Si terminé :
+- Ajouter une activité permettant de modifier un utilisateur
