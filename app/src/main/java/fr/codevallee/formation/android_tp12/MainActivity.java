@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.ListView;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -28,8 +29,9 @@ public class MainActivity extends AppCompatActivity {
             usersList[i] = users.get(i).serialize();
         }
 
-        final ArrayAdapter<String> adapter = new ArrayAdapter<String>(MainActivity.this, android.R.layout.simple_list_item_1, usersList);
-        usersView.setAdapter(adapter);
+        // final ArrayAdapter<String> adapter = new ArrayAdapter<String>(MainActivity.this, android.R.layout.simple_list_item_1, usersList);
+        UserAdapter userAdapter = new UserAdapter(MainActivity.this, users);
+        usersView.setAdapter(userAdapter);
 
         Button addUserButton = (Button) findViewById(R.id.add_user_main);
         addUserButton.setOnClickListener(new View.OnClickListener() {

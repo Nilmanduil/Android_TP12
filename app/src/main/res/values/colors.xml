@@ -6,4 +6,7 @@
 
     <color name="colorListEven">#DDD</color>
     <color name="colorListOdd">#AAA</color>
+
+    <color name="colorDelete">#F00</color>
+    <color name="colorDeleteText">#FFF</color>
 </resources>
