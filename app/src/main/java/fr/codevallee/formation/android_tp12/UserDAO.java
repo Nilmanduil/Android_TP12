@@ -32,7 +32,6 @@ public class UserDAO {
     }
 
     public User readUser(User user) {
-        // columns
         String[] allColumns = new String[]{dataSource.getHelper().COL_ID, dataSource.getHelper().COL_FIRSTNAME, dataSource.getHelper().COL_LASTNAME, dataSource.getHelper().COL_AGE, dataSource.getHelper().COL_WORK};
 
         String clause = dataSource.getHelper().COL_ID + " = ?";
