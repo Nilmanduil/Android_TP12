@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="fr.codevallee.formation.android_tp12.AddUserActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_user"
+        android:textSize="32dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:layout_weight="5"
+        android:layout_marginBottom="20dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="200"
+        android:weightSum="100"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="50"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/firstname_label"
+                android:textSize="24dp"/>
+
+            <EditText
+                android:id="@+id/firstname_field_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/firstname_label"
+                android:inputType="textCapWords"
+                android:paddingHorizontal="10dp"
+                android:selectAllOnFocus="true"
+                android:maxLines="1" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lastname_label"
+                android:textSize="24dp"/>
+
+            <EditText
+                android:id="@+id/lastname_field_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/lastname_label"
+                android:inputType="textCapWords"
+                android:paddingHorizontal="10dp"
+                android:selectAllOnFocus="true"
+                android:maxLines="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_weight="50"
+            android:orientation="vertical"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/age_label"
+                android:textSize="24dp" />
+
+            <EditText
+                android:id="@+id/age_field_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/age_label"
+                android:inputType="number"
+                android:maxLines="1"
+                android:paddingHorizontal="10dp"
+                android:selectAllOnFocus="true" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/work_label"
+                android:textSize="24dp" />
+
+            <EditText
+                android:id="@+id/work_field_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/work_label"
+                android:inputType="textCapWords|textAutoCorrect|textAutoComplete"
+                android:maxLines="1"
+                android:paddingHorizontal="10dp"
+                android:selectAllOnFocus="true" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/add_user_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_user"
+        android:drawableLeft="@android:drawable/ic_input_add"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="10"/>
+
+</LinearLayout>
