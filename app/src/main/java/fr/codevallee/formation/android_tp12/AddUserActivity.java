@@ -46,4 +46,31 @@ public class AddUserActivity extends AppCompatActivity {
             }
         });
     }
+
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        EditText firstnameField = (EditText) findViewById(R.id.firstname_field_add);
+        firstnameField.setText(savedInstanceState.getString("firstname"));
+        EditText lastnameField = (EditText) findViewById(R.id.lastname_field_add);
+        lastnameField.setText(savedInstanceState.getString("lastname"));
+        EditText ageField = (EditText) findViewById(R.id.age_field_add);
+        ageField.setText(savedInstanceState.getString("age"));
+        EditText workField = (EditText) findViewById(R.id.work_field_add);
+        workField.setText(savedInstanceState.getString("work"));
+    }
+
+    protected void onSaveInstanceState(Bundle outState) {
+        EditText firstnameField = (EditText) findViewById(R.id.firstname_field_add);
+        String firstname = firstnameField.getText().toString();
+        EditText lastnameField = (EditText) findViewById(R.id.lastname_field_add);
+        String lastname = lastnameField.getText().toString();
+        EditText ageField = (EditText) findViewById(R.id.age_field_add);
+        String ageValue = ageField.getText().toString();
+        EditText workField = (EditText) findViewById(R.id.work_field_add);
+        String work = workField.getText().toString();
+
+        outState.putString("firstname", firstname);
+        outState.putString("lastname", lastname);
+        outState.putString("age", ageValue);
+        outState.putString("work", work);
+    }
 }
