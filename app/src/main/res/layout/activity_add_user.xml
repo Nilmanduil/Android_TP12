@@ -31,7 +31,11 @@
         android:id="@+id/firstname_field_add"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingHorizontal="10dp"/>
+        android:hint="@string/firstname_label"
+        android:inputType="textCapWords"
+        android:paddingHorizontal="10dp"
+        android:selectAllOnFocus="true"
+        android:maxLines="1" />
 
     <Space
         android:layout_width="match_parent"
@@ -47,7 +51,11 @@
         android:id="@+id/lastname_field_add"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingHorizontal="10dp"/>
+        android:hint="@string/lastname_label"
+        android:inputType="textCapWords"
+        android:paddingHorizontal="10dp"
+        android:selectAllOnFocus="true"
+        android:maxLines="1" />
 
     <Space
         android:layout_width="match_parent"
@@ -63,8 +71,11 @@
         android:id="@+id/age_field_add"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:hint="@string/age_label"
+        android:inputType="number"
         android:paddingHorizontal="10dp"
-        android:inputType="number"/>
+        android:selectAllOnFocus="true"
+        android:maxLines="1" />
 
     <Space
         android:layout_width="match_parent"
@@ -80,7 +91,11 @@
         android:id="@+id/work_field_add"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingHorizontal="10dp"/>
+        android:hint="@string/work_label"
+        android:inputType="textCapWords|textAutoCorrect|textAutoComplete"
+        android:paddingHorizontal="10dp"
+        android:selectAllOnFocus="true"
+        android:maxLines="1"/>
 
     <Space
         android:layout_width="match_parent"
